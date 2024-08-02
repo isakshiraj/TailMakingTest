@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+    <div class="mainContainer">
+            <h1>DASHBOARD</h1>
+   
+    <div class="container">
+        <div class="sidebar">
+            <h2>{{username}}</h2>
+            <ul>
+                <li><a href="/results?username={{username}}">Results</a></li>
+                <li><a href="/logout">Sign Out</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+        
+        <div class="button-container">
+            <h3>Trail Making Test</h3>
+            <a href="/trailmakingtest">
+                <button>Start</button>
+            </a>
+        </div>    
+        </div>
+    </div>
+    </div>
+
+    <script>
+        localStorage.setItem('username', '{{username}}');
+    </script>
+</body>
+</html>

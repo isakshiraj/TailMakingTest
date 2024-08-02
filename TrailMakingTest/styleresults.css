@@ -1,0 +1,137 @@
+/* Normalize CSS across browsers */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* Global body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: #c7b8e4; */
+    background-image: url(image/textureWhite.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Container for content */
+.container {
+    width: 90%;
+    height: 85vh;
+    padding: 20px;
+    background-color: #fcfffc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 50px;
+    margin-top: -10px ;
+    margin-bottom: 30px;
+    color: #5a5959;
+}
+
+/* Flex container for results */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Styling for individual boxes */
+.box {
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+    height: 50vh;
+}
+
+.time-text {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    color: #3c3b3b;
+    font-weight: 600;
+}
+
+.time-text .time {
+    display: inline-block;
+    font-size: 30px;
+    color: #555;
+    font-weight: 600;
+}
+
+#partA-interpretation, #partB-interpretation {
+    color: #5DCA9C;
+    background-color: #e0f7e9;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    height: 30vh;
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+
+/* Styling for buttons */
+/* .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+} */
+
+.back-to-dashboard-button {
+    /* padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border-color: #007BFF;
+    border-radius: 4px;
+    cursor: pointer; */
+    width: 250px;
+    height: 70px;
+    background-color: #ae7ec4;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.back-to-dashboard-button:hover {
+    background-color: #FFFFFF;
+    color: #ae7ec4;
+    border: 5px solid #ae7ec4;
+    
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

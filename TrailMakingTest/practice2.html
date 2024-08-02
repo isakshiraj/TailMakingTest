@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice2</title>
+    <link rel="stylesheet" href="stylepractice2.css">
+</head>
+<body>
+    <main class="main" style="display: none;">
+        <div id="game-info">
+            <div id="moves-container">
+                <div id="moves-progress"><span id="moves"></span></div>
+            </div>
+            <div id="timer-container"><span id="timer">00:00</span></div>
+        </div>
+        <div id="game-area"></div>
+        <button class="next-button" style="display: none;">Next</button>
+    </main> 
+
+    <!-- Popup Tutorial -->
+    <div class="popupTutorial active">
+        <div class="instructionspartb">
+            <h1 style="font-size: 50px; margin-top: 35px; margin-bottom: 20px; color: #423f3f; text-align: center;">
+                INSTRUCTIONS
+            </h1>
+            <h2 style="font-size: 40px;  margin-bottom: -10px; color: #423f3f; text-align: center;">
+                Part B
+            </h2>    
+            <br>
+            <p style="font-size: 25px; text-align: center; padding-right: 50px; padding-left: 30px;">
+                Click a <b>circle</b> with a <b>number</b>, then a circle with a <b>letter</b>, in <b>ascending order</b> and <b>alphabetical order</b> respectively.
+                <br>
+                <br>
+                Standard Time : 91 seconds
+            </p>
+        </div>
+        <div class="btn-group">
+            <button class="info-btn continue-btn" style="font-size: 30px; font-weight: 700;">Continue</button>
+        </div>
+    </div>
+
+    <!-- Popup Practice -->
+    <div class="popupPractice">
+        <div class="instructions">
+            <h1 style="font-size: 50px; margin-top: 45px; margin-bottom: 10px; color: #423f3f; text-align: center;">
+                PRACTICE
+            </h1>
+            <br>
+            <ul style="font-size: 25px; color: #423f3f; text-align: left; margin-left: 90px; margin-top: 10px; padding-right: 60px;">
+                <li style="margin-bottom: 10px;">You will be shown numbers contained in circles.</li>
+                <li>Please click the circles alternating numbers and letters in ascending order. Start at number 1, then the letter A. Then the next number 2, and then the next letter B.</li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button class="info-btn continue-button">START</button>
+        </div>    
+    </div>    
+
+    <script src="practice2.js"></script>
+</body>
+</html>

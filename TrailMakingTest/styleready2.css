@@ -1,0 +1,241 @@
+/* Normalize CSS across browsers */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    overflow: hidden; 
+    font-family: sans-serif;
+    background-image: url(image/textureWhite.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+/*progress and timing*/
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    gap: 10px;
+}
+
+#moves-container {
+    position: relative;
+    background-color: #5DCA9C;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 15px;
+    border-radius: 10px;
+    flex-grow: 1.3;
+    overflow: hidden;
+}
+
+#moves-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #3dba86;
+    transition: width 0.3s;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+
+#timer-container {
+    background-color: #AE7EC4;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/*Circle buttons*/
+
+#game-area {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+
+.circle-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 2px solid #f0f0f0;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.start-circle {
+    border: 2px solid #5DCA9C;
+}
+
+.end-circle {
+    border: 2px solid #5DCA9C;
+}
+
+
+.circle-button.correct {
+    background-color: #ae7ec4;
+    color: white;
+    border: 2px solid #ae7ec4;
+}
+
+.circle-button.wrong {
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+}
+
+.label {
+    position: absolute;
+    top: -55%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #5DCA9C;
+    font-weight: 800;
+}
+
+.line {
+    position: absolute;
+    height: 3px;
+    background-color: #ae7ec4;
+    transform-origin: top left;
+    pointer-events: none;
+}
+
+
+
+/*Pop up practice page*/
+.popupPractice {
+    position: absolute;
+    /* margin-top: -290px;
+    height: 115%;
+    margin-left: 50%;
+    width: 115%; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    background: #c7b8e4;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.instructions{
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.7);
+    background-color: #FFFFFF;
+    border-radius: 80px;
+    margin-top: 90px;
+    margin-left: 260px;
+    align-items: center;
+    width: 60%;
+    height: 70vh;
+ 
+}
+
+.spanready{
+    color: #5DCA9C;
+    font-size: 150px;
+}
+
+
+.popupPractice .btn-group {
+    position: relative;
+    /* display: flex;
+            justify-content: space-between; */
+    /* align-items: left; */
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 5%;
+    top: -40%;
+    left: 0%;
+}
+
+.popupPractice .btn-group .info-btn {
+    position: relative;
+    /* display: inline-flex;
+            justify-content: center; */
+    /* align-items: center; */
+    /* margin-left: -100px; */
+    width: 230px;
+    height: 100px;
+    background-color: #5DCA9C;
+    border: 10px solid #FFFFFF;
+    outline: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 800;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* .popupTutorial .btn-group .info-btn:nth-child(1) {
+            background: #004BA3;
+            color: #FFFFFF;
+        } */
+
+.popupPractice .btn-group .info-btn:nth-child(1):hover {
+    background: #FFFFFF;
+    color: #5DCA9C;
+    border: 15px solid #5DCA9C;
+}
+
+
+/* Next Button */
+.next-button {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    background-color: #c4abf3;
+    color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 50px;
+    /* padding: 10px 20px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    width: 110px;
+    height: 60px;
+    font-weight: 700;
+}
+
+.next-button:hover {
+    background-color: #b595f4;
+}
